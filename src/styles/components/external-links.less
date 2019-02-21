@@ -1,0 +1,25 @@
+
+.external-links{
+  display: flex;
+}
+
+.external-link{
+  text-transform: uppercase;
+  position: relative;
+  color: var(--grey);
+  list-style-type: none;
+}
+
+.external-link+.external-link:before{
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: currentColor;
+  top: 0;
+  left: -15px;
+}
+
+.external-link+.external-link{
+  margin-left: 30px;
+}
